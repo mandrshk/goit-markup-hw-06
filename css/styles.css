@@ -514,8 +514,8 @@ li {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-height: 581px;
-  min-width: 528px;
+  height: 581px;
+  width: 528px;
 
   padding: 40px;
   text-align: left;
@@ -538,6 +538,13 @@ li {
 
 .close-icon {
   fill: black;
+  transition: fill 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon:hover,
+.close-icon:focus {
+  fill: var(--accent-color);
 }
 
 .fill-your-data {
@@ -553,6 +560,7 @@ li {
 }
 
 .modal-label {
+  position: relative;
   display: inline-block;
   font-weight: 400;
   font-size: 12px;
@@ -570,12 +578,20 @@ li {
   height: 40px;
   margin-bottom: 10px;
   padding: 12px 42px;
+  margin-top: 4px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
+.modal-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
+}
+
 .modal-input-icon {
+  position: absolute;
+  top: 28px;
+  left: 12px;
   fill: #212121;
 }
 
