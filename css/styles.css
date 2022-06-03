@@ -628,6 +628,11 @@ li {
   position: absolute;
 }
 
+.give-feedback:focus {
+  outline: transparent;
+  border: 1px solid var(--accent-color);
+}
+
 .agree-contract {
   display: inline-block;
   font-weight: 400;
