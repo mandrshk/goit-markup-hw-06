@@ -656,6 +656,7 @@ li {
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   background-size: contain;
+  background-position: center;
   background-origin: border-box;
   border-color: var(--accent-color);
 }
