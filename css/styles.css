@@ -529,6 +529,8 @@ li {
 
 .button-modal {
   position: absolute;
+  width: 30px;
+  height: 30px;
   right: 8px;
   top: 8px;
   background-color: var(--primary-white-color);
@@ -537,6 +539,10 @@ li {
 }
 
 .close-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   fill: black;
   transition: fill 250ms
     cubic-bezier(0.4, 0, 0.2, 1);
@@ -568,7 +574,7 @@ li {
 
   letter-spacing: 0.01em;
 
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   color: var(--secondary-color);
 }
 
@@ -576,7 +582,6 @@ li {
   display: block;
   width: 448px;
   height: 40px;
-  margin-bottom: 10px;
   padding: 12px 42px;
   margin-top: 4px;
 
@@ -600,6 +605,10 @@ li {
   fill: #212121;
 }
 
+.modal-label-feedback {
+  margin-bottom: 20px;
+}
+
 .give-feedback {
   display: block;
   resize: none;
@@ -613,7 +622,7 @@ li {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  margin-bottom: 20px;
+  margin-top: 4px;
 
   color: rgba(117, 117, 117, 0.5);
 
@@ -634,7 +643,9 @@ li {
 }
 
 .agree-contract {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -643,7 +654,6 @@ li {
 
   color: #757575;
 
-  margin-right: 11px;
   margin-bottom: 30px;
 }
 
@@ -667,6 +677,7 @@ li {
 }
 
 .terms-ofcontract {
+  margin-left: 5px;
   text-decoration: underline;
   color: var(--accent-color);
 }
@@ -1084,6 +1095,7 @@ img {
 
 .footer-container {
   display: flex;
+  flex-grow: 1;
   align-items: baseline;
 }
 
@@ -1221,7 +1233,9 @@ img {
 }
 
 .follow-button {
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
   padding: 10px 29px;
@@ -1242,9 +1256,6 @@ img {
 }
 
 .send-icon {
-  position: absolute;
-  top: 13px;
-  bottom: 13px;
-  right: 28px;
   fill: var(--primary-white-color);
+  margin-left: 10px;
 }

@@ -116,14 +116,15 @@
             class="backdrop is-hidden"
           >
             <div class="modal">
+              <form>
               <button
                 data-modal-close
                 class="button-modal"
               >
                 <svg
                   class="close-icon"
-                  width="11"
-                  height="11"
+                  width="18"
+                  height="18"
                 >
                   <use
                     href="./images/icons.svg#icon-close-cros"
@@ -188,9 +189,10 @@
                   </svg>
               </label>
 
-              <label class="modal-label" for=""
+              <label class="modal-label modal-label-feedback" for="comment"
                 >Комментарий
                 <textarea
+                id="comment"
                   class="give-feedback"
                   name="feedback"
                   rows="5"
@@ -210,7 +212,7 @@
                   class="icon-checkbox"
                 ></span>
                 Соглашаюсь с рассылкой и принимаю
-                <a
+                 <a
                   class="terms-ofcontract"
                   href=""
                   >Условия договора</a
@@ -222,6 +224,7 @@
               >
                 Отправить
               </button>
+              </form>
             </div>
           </div>
         </div>
